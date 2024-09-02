@@ -122,3 +122,34 @@ div.beloved:after {
     transform: translateX(3vmin) translateY(-3vmin);
   }
 }
+
+/* styles.css */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header, .footer {
+    width: 100%;
+}
+
+.column {
+    float: left;
+    width: 100%; /* default to full width on small screens */
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 600px) {
+    .column {
+        width: 50%; /* 2 columns on medium screens */
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .column {
+        width: 33.33%; /* 3 columns on larger screens */
+    }
+}
+
